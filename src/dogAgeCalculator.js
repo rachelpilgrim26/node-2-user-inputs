@@ -9,12 +9,15 @@ node dogAgeCalculator.js
 
 */
 console.log(process.argv);
-
+// show all command-line arguments as an array
 let name = process.argv[2];
+// get the 1st user argument (index 2): the person's name
 let ageText = process.argv[3];
-
+// get the 2nd user argument (index 3): the age as text
 let age = Number(ageText);
+// make the age string into a number for math
 let dogYears = 0;
+// start a dog-years value at 0 to fill in later
 
 // if the human age equals 1 the dog years equal 15
 if (age === 1) {
